@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Charcoal House Agadir | Premium Grill Restaurant</title>
+    <meta name="description" content="Experience the finest grill at The Charcoal House Agadir. Explore our menu, book a table, and join us for an unforgettable dining experience.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">The Charcoal House<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home" data-i18n="nav_home">Accueil</a>
+                <a href="#menu" data-i18n="nav_menu">Menu</a>
+                <a href="#about" data-i18n="nav_about">À propos</a>
+                <a href="#gallery" data-i18n="nav_gallery">Galerie</a>
+                <a href="#contact" data-i18n="nav_contact">Contact</a>
+                <a href="#reservation" class="btn btn-primary nav-btn" data-i18n="nav_book">Réserver</a>
+                <button id="lang-toggle" class="btn btn-outline nav-btn language-switcher" data-i18n="lang_toggle">AR</button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero fade-in">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero_title">Bienvenue à The Charcoal House</h1>
+            <p class="hero-subtitle" data-i18n="hero_subtitle">La meilleure expérience de grillade à Agadir.</p>
+            <div class="hero-actions">
+                <a href="#reservation" class="btn btn-primary" data-i18n="btn_reserve">Réserver une Table</a>
+                <a href="#menu" class="btn btn-outline" data-i18n="btn_view_menu">Voir le Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights fade-in">
+        <div class="container grids">
+            <div class="highlight-card">
+                <i class="fas fa-fire highlight-icon"></i>
+                <h3 data-i18n="hl1_title">Maîtres du Charbon</h3>
+                <p data-i18n="hl1_desc">Techniques authentiques de grillade au charbon pour une saveur inégalée.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-leaf highlight-icon"></i>
+                <h3 data-i18n="hl2_title">Ingrédients Frais</h3>
+                <p data-i18n="hl2_desc">Viandes de qualité et légumes de saison d'origine locale.</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fas fa-wine-glass highlight-icon"></i>
+                <h3 data-i18n="hl3_title">Accords Parfaits</h3>
+                <p data-i18n="hl3_desc">Une sélection exquise de boissons pour accompagner votre repas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="menu_title">Notre Menu</h2>
+                <p data-i18n="menu_subtitle">Un voyage culinaire de saveurs.</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="menu-cat-btn active" data-filter="all" data-i18n="cat_all">Tout</button>
+                <button class="menu-cat-btn" data-filter="starters" data-i18n="cat_starters">Entrées</button>
+                <button class="menu-cat-btn" data-filter="mains" data-i18n="cat_mains">Plats</button>
+                <button class="menu-cat-btn" data-filter="desserts" data-i18n="cat_desserts">Desserts</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item1_title">Carpaccio Fumé</span> <span class="dietary gf">GF</span></h4>
+                        <p class="menu-item-desc" data-i18n="item1_desc">Bœuf finement tranché, huile de truffe, parmesan, câpres.</p>
+                    </div>
+                    <div class="menu-item-price">$18</div>
+                </div>
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item2_title">Halloumi Grillé</span> <span class="dietary v">V</span></h4>
+                        <p class="menu-item-desc" data-i18n="item2_desc">Servi avec salsa menthe-grenade et pain plat.</p>
+                    </div>
+                    <div class="menu-item-price">$14</div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item3_title">Tomahawk Signature</span> <span class="dietary gf">GF</span></h4>
+                        <p class="menu-item-desc" data-i18n="item3_desc">Coupe de 32oz, rôtie au charbon, beurre à la moelle.</p>
+                    </div>
+                    <div class="menu-item-price">$85</div>
+                </div>
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item4_title">Saumon sur Planche de Cèdre</span> <span class="dietary gf">GF</span></h4>
+                        <p class="menu-item-desc" data-i18n="item4_desc">Saumon de l'Atlantique, asperges grillées, beurre citron-herbes.</p>
+                    </div>
+                    <div class="menu-item-price">$32</div>
+                </div>
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item5_title">Aubergine Rôtie au Charbon</span> <span class="dietary vg">VG</span></h4>
+                        <p class="menu-item-desc" data-i18n="item5_desc">Filet de tahini, pignons de pin, grenades, herbes fraîches.</p>
+                    </div>
+                    <div class="menu-item-price">$24</div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item6_title">Cheesecake Fumé à la Vanille</span></h4>
+                        <p class="menu-item-desc" data-i18n="item6_desc">Cheesecake de style basque, compote de fruits rouges.</p>
+                    </div>
+                    <div class="menu-item-price">$12</div>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-info">
+                        <h4 class="menu-item-title"><span data-i18n="item7_title">Fondant au Chocolat</span></h4>
+                        <p class="menu-item-desc" data-i18n="item7_desc">Cœur coulant au chocolat, sel au charbon, glace vanille.</p>
+                    </div>
+                    <div class="menu-item-price">$14</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section fade-in">
+        <div class="container about-grid">
+            <div class="about-image-placeholder">
+                <img src="images/insta_2.jpg" alt="Chef Youssef expertly grilling over an open fire" class="about-img">
+            </div>
+            <div class="about-content">
+                <h2 data-i18n="about_title">Notre Histoire</h2>
+                <p data-i18n="about_p1">Né d'une passion pour la cuisson au feu de bois, The Charcoal House Agadir apporte l'art primitif de la grillade dans un cadre raffiné et élégant. Nous pensons que la fumée et le feu sont les ingrédients essentiels qui transforment de bons aliments en une expérience inoubliable.</p>
+                <p data-i18n="about_p2">Dirigée par le Chef Youssef, notre équipe s'approvisionne uniquement avec les meilleurs ingrédients locaux, laissant les saveurs naturelles briller grâce à des techniques expertes de grillade au charbon.</p>
+                <br>
+                <a href="#reservation" class="btn btn-outline" data-i18n="btn_join">Rejoignez-nous ce Soir</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="gallery_title">Galerie</h2>
+                <p data-i18n="gallery_subtitle">Un aperçu de notre ambiance et de nos plats.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item item-1"></div>
+                <div class="gallery-item item-2"></div>
+                <div class="gallery-item item-3"></div>
+                <div class="gallery-item item-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section fade-in">
+        <div class="container reservation-grid">
+            <div class="reservation-info">
+                <h2 data-i18n="res_title">Réserver une Table</h2>
+                <p data-i18n="res_subtitle">Réservez votre place à The Charcoal House et profitez de la meilleure grillade d'Agadir.</p>
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-i18n="res_hours">Heures d'Ouverture</h4>
+                            <p data-i18n="res_hours_time">Lun-Dim: 18:00 - 23:30</p>
+                        </div>
+                    </div>
+                    <div class="info-block">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="res_call">Appelez-nous</h4>
+                            <p>+212 555-123456</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="reservation-form" id="res-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Nom</label>
+                        <input type="text" id="name" required placeholder="John Doe" data-i18n-placeholder="form_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date" data-i18n="form_date">Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time" data-i18n="form_time">Heure</label>
+                        <select id="time" required>
+                            <option value="" data-i18n="form_time_select">Sélectionner l'heure</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests" data-i18n="form_guests">Invités</label>
+                    <select id="guests" required>
+                        <option value="1" data-i18n="form_guests_1">1 Personne</option>
+                        <option value="2" data-i18n="form_guests_2">2 Personnes</option>
+                        <option value="3" data-i18n="form_guests_3">3 Personnes</option>
+                        <option value="4" data-i18n="form_guests_4">4 Personnes</option>
+                        <option value="5+" data-i18n="form_guests_5">5+ Personnes</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" data-i18n="form_confirm">Confirmer la Réservation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title">Lieu & Contact</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.3804368153406!2d-9.601557!3d30.425313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b72f123456789%3A0x123456789abcdef!2sThe%20Charcoal%20House%20Agadir!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma" width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-details">
+                    <h3 data-i18n="contact_get">Contactez-nous</h3>
+                    <p data-i18n="contact_q">Vous avez des questions ? Nous serions ravis de vous entendre.</p>
+                    <br>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="Nom" required data-i18n-placeholder="form_name">
+                        <input type="email" placeholder="Email" required>
+                        <textarea rows="4" placeholder="Message" required data-i18n-placeholder="form_msg"></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="form_send">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h3>The Charcoal House<span>.</span></h3>
+                <p data-i18n="footer_desc">La meilleure expérience de grillade à Agadir.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thecharcoalhouseagadir/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_quick">Liens Rapides</h4>
+                <a href="#home" data-i18n="nav_home">Accueil</a>
+                <a href="#menu" data-i18n="nav_menu">Menu</a>
+                <a href="#about" data-i18n="nav_about">À propos</a>
+                <a href="#reservation" data-i18n="nav_book">Réserver</a>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n="footer_contact">Contact</h4>
+                <p>Agadir Bay Area, Agadir, Morocco</p>
+                <p>info@charcoalhouse.ma</p>
+                <p>+212 555-123456</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copy">© 2026 The Charcoal House Agadir. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
